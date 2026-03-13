@@ -1,0 +1,836 @@
+# Russian translations for Control Center package.
+# Copyright (C) 2026 Christos A. Daggas
+# This file is distributed under the same license as the Control Center package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Control Center 1.0.0\n"
+"Report-Msgid-Bugs-To: christos@daggas.com\n"
+"POT-Creation-Date: 2026-02-15 18:33+0200\n"
+"PO-Revision-Date: 2026-02-15 18:33+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/ui/app.rs:244
+msgid ""
+"A modern Linux system monitoring and control center.\n"
+"\n"
+"View system health, manage services, and monitor activity timeline."
+msgstr ""
+
+#: src/ui/pages/help_page.rs:53 src/ui/widgets/theme_popover.rs:185
+msgid "About Control Center"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:79 src/ui/pages/help_page.rs:156
+#: src/ui/window.rs:60
+msgid "Activity Timeline"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:768
+msgid "After:"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:48 src/ui/widgets/filter_bar.rs:32
+msgid "All"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:68
+msgid "All events"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:149
+msgid "Analyzing..."
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:25
+msgid "Appearance"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:64
+msgid "Author"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:162
+msgid "Automatic Update Check"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:133
+msgid "Automatically delete snapshots older than this (0 = keep forever)"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:157
+msgid "Automatically groups related events to identify root causes of system changes."
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:84 src/ui/pages/diagnostics_page.rs:90
+#: src/ui/pages/diagnostics_page.rs:108 src/ui/pages/diagnostics_page.rs:115
+#: src/ui/pages/diagnostics_page.rs:122
+msgid "Available"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:99
+msgid "Available event data sources"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:752
+msgid "Before:"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:114 src/ui/pages/performance_page.rs:172
+#: src/ui/widgets/process_list.rs:142
+msgid "CPU"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:305
+msgid "CPU & Compute"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:345
+msgid "CPU Cores"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:421
+msgid "Cancel"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:159
+msgid "Capture and compare system state to track package, service, and configuration changes."
+msgstr ""
+
+#: src/ui/widgets/filter_bar.rs:31
+msgid "Changes"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:71
+msgid "Changes only"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:162
+msgid "Checks GitHub Releases for newer versions and displays a notification banner."
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:31
+msgid "Choose light, dark, or follow the system theme"
+msgstr ""
+
+#: src/ui/widgets/timeline_view.rs:70
+msgid "Click the refresh button to load system events"
+msgstr ""
+
+#: src/ui/app.rs:212
+msgid "Close"
+msgstr ""
+
+#: src/ui/window.rs:304
+msgid "Collapse sidebar"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:157
+msgid "Collecting initial samples..."
+msgstr ""
+
+#. Compare button
+#: src/ui/pages/snapshot_page.rs:222
+msgid "Compare to Current"
+msgstr ""
+
+#: src/ui/app.rs:182
+msgid "Compare to current"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:61
+msgid "Configure default timeline behaviour"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:60
+msgid "Control Center is a modern system monitoring and management tool for Linux.              It provides a graphical interface for monitoring system health, managing services,              viewing activity logs, and comparing system state snapshots."
+msgstr ""
+
+#: src/ui/widgets/event_row.rs:45
+msgid "Copy event message"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:422
+msgid "Create"
+msgstr ""
+
+#. Create snapshot button
+#: src/ui/pages/snapshot_page.rs:199 src/ui/pages/snapshot_page.rs:410
+msgid "Create Snapshot"
+msgstr ""
+
+#: src/ui/app.rs:181
+msgid "Create new snapshot"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:108
+msgid "Create snapshots of your system state and compare them to find what changed."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:387
+msgid "Critical system service"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:129
+msgid "Current Diagnosis"
+msgstr ""
+
+#. Create current snapshot (in memory only)
+#: src/ui/pages/snapshot_page.rs:515
+msgid "Current System"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:131
+msgid "Current session statistics"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:26
+msgid "Customize the look and feel"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:32 src/ui/widgets/theme_popover.rs:76
+msgid "Dark"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:163
+msgid "Dark/Light Theme"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:116
+msgid "Data"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:65
+msgid "Default filter"
+msgstr ""
+
+#. Delete button
+#: src/ui/pages/snapshot_page.rs:232
+msgid "Delete"
+msgstr ""
+
+#: src/ui/app.rs:183
+msgid "Delete snapshot"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:46
+msgid "Desktop"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:42
+msgid "Desktop Environment"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:156
+msgid "Desktop notification settings"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:43
+msgid "Detected system environment"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:142
+msgid "Diagnostic mode"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:38
+msgid "Diagnostics"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:52
+msgid "Disabled"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:420
+msgid "Disk Usage"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:514
+msgid "Disk metrics provider returned no devices."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:466
+msgid "Enable at boot"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:159
+msgid "Enable notifications"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:143
+msgid "Enable verbose logging for troubleshooting"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:51
+msgid "Enabled"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:411
+msgid "Enter a name for this snapshot."
+msgstr ""
+
+#: src/ui/widgets/filter_bar.rs:29
+msgid "Errors"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:157
+msgid "Event Correlation Engine"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:98
+msgid "Event Sources"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:228
+msgid "Evidence"
+msgstr ""
+
+#: src/ui/window.rs:301
+msgid "Expand sidebar"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:161
+msgid "Export & Data Retention"
+msgstr ""
+
+#: src/ui/app.rs:203
+msgid "Export events"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:161
+msgid "Export events to JSON, CSV, or Markdown. Configurable automatic data retention."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:50
+msgid "Failed"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:372
+msgid "Failed Services"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:83
+msgid "File Chooser"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:66
+msgid "Filter preset applied when the app starts"
+msgstr ""
+
+#: src/ui/app.rs:192
+msgid "General"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:24 src/ui/window.rs:66
+msgid "Help"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:104
+msgid "History (days)"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:396
+msgid "Hostname"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:180
+msgid "I/O"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:406
+msgid "Kernel Version"
+msgstr ""
+
+#: src/ui/app.rs:141 src/ui/widgets/theme_popover.rs:166
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:102 src/ui/pages/help_page.rs:96
+#: src/ui/pages/help_page.rs:159 src/ui/window.rs:64
+msgid "Known-Good Snapshot"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:142
+msgid "Last Ingestion"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:29
+msgid "Learn how to use Control Center"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:65
+msgid "License"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:32 src/ui/widgets/theme_popover.rs:70
+msgid "Light"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:65
+msgid "Limited"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:114
+msgid "Limited access to /proc - running in degraded mode"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:350
+msgid "Load Average"
+msgstr ""
+
+#: src/ui/widgets/timeline_view.rs:77
+msgid "Load Events"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:427
+msgid "Loading disk information..."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:198
+msgid "Loading services..."
+msgstr ""
+
+#: src/ui/pages/health_page.rs:80 src/ui/pages/health_page.rs:92
+#: src/ui/pages/health_page.rs:340 src/ui/pages/health_page.rs:396
+#: src/ui/pages/health_page.rs:401 src/ui/pages/health_page.rs:406
+#: src/ui/pages/health_page.rs:411
+msgid "Loading..."
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:117
+msgid "Manage stored data and retention"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:176 src/ui/widgets/process_list.rs:149
+msgid "Memory"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:160
+msgid "Monitor CPU, memory, and I/O pressure using PSI (Pressure Stall Information)."
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:416
+msgid "My Known-Good State"
+msgstr ""
+
+#: src/ui/app.rs:153
+msgid "Navigation"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:78
+msgid "No"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:606
+msgid "No Changes Detected"
+msgstr ""
+
+#: src/ui/widgets/timeline_view.rs:64
+msgid "No Events"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:510
+msgid "No disks detected"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:244
+msgid "No services match the current filter"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:264
+msgid "No significant contributors identified"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:344
+msgid "No snapshots yet"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:239
+msgid "No triggered rules"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:108 src/ui/pages/diagnostics_page.rs:115
+#: src/ui/pages/diagnostics_page.rs:122
+msgid "Not Available"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:59
+msgid "Not set"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:89 src/ui/pages/settings_page.rs:155
+msgid "Notifications"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:105
+msgid "Number of days of events to load by default"
+msgstr ""
+
+#: src/ui/app.rs:163
+msgid "Open menu"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:401
+msgid "Operating System"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:108
+msgid "PSI not available - some metrics may be limited (requires kernel 4.20+)"
+msgstr ""
+
+#: src/ui/window.rs:62
+msgid "Performance"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:160
+msgid "Performance Pressure Analysis"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:77
+msgid "Portal Available"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:74
+msgid "Portal capabilities for sandboxed operations"
+msgstr ""
+
+#: src/ui/widgets/process_list.rs:128
+msgid "Process"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:340
+msgid "Processor"
+msgstr ""
+
+#: src/ui/widgets/theme_popover.rs:204
+msgid "Quit"
+msgstr ""
+
+#: src/ui/app.rs:164
+msgid "Quit application"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:125
+msgid "RAM"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:155
+msgid "Real-time CPU, memory, disk, and uptime monitoring with visual progress indicators."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:497
+msgid "Recent Logs"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:246
+msgid "Redact sensitive data"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:391
+msgid "Redacted"
+msgstr ""
+
+#: src/ui/app.rs:201 src/ui/window.rs:329
+msgid "Refresh events"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:141
+msgid "Refresh list"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:163
+msgid "Refresh services"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:518
+msgid "Rescan"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:442
+msgid "Restart"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:49
+msgid "Running"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:363
+msgid "Running Services"
+msgstr ""
+
+#: src/ui/app.rs:202
+msgid "Search / filter"
+msgstr ""
+
+#: src/ui/widgets/filter_bar.rs:127
+msgid "Search events..."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:157
+msgid "Search services..."
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:299
+msgid "Select a Snapshot"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:301
+msgid "Select a snapshot from the list and click \"Compare to Current\" to see what changed."
+msgstr ""
+
+#: src/ui/pages/health_page.rs:232
+msgid "Services"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:87 src/ui/pages/help_page.rs:158
+#: src/ui/window.rs:63
+msgid "Services Manager"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:359
+msgid "Services Status"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:52
+msgid "Session Type"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:17 src/ui/window.rs:65
+msgid "Settings"
+msgstr ""
+
+#: src/ui/widgets/severity_badge.rs:25
+msgid "Severity"
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:787
+msgid "Show Evidence"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:160
+msgid "Show desktop notifications for critical events"
+msgstr ""
+
+#: src/ui/app.rs:200
+msgid "Show keyboard shortcuts"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:257
+msgid "Showing"
+msgstr ""
+
+#: src/ui/widgets/filter_bar.rs:28
+msgid "Since Reboot"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:69
+msgid "Since last reboot"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:132
+msgid "Snapshot retention (days)"
+msgstr ""
+
+#: src/ui/app.rs:173 src/ui/pages/snapshot_page.rs:133
+msgid "Snapshots"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:111
+msgid "Some PSI metrics unavailable"
+msgstr ""
+
+#: src/ui/widgets/process_list.rs:49
+msgid "Sort by CPU usage"
+msgstr ""
+
+#: src/ui/widgets/process_list.rs:54
+msgid "Sort by memory usage"
+msgstr ""
+
+#: src/ui/widgets/event_row.rs:131
+msgid "Source Evidence"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:407
+msgid "Start"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:130
+msgid "Statistics"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:423
+msgid "Stop"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:136
+msgid "Swap"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:163
+msgid "Switch between dark, light, and system themes via the hamburger menu."
+msgstr ""
+
+#: src/ui/app.rs:161
+msgid "Switch pages"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:32 src/ui/widgets/theme_popover.rs:64
+msgid "System"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:71 src/ui/window.rs:61
+msgid "System Health"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:155
+msgid "System Health Dashboard"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:393
+msgid "System Information"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:89
+msgid "System Services"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:80
+msgid "The Activity Timeline shows system events, service changes, and log entries          in chronological order. Filter events by severity level and source to focus          on what matters. This helps you track what's happening on your system."
+msgstr ""
+
+#: src/ui/pages/help_page.rs:97
+msgid "The Known-Good Snapshot feature captures your system's state at a point in time.          Compare snapshots to identify what changed—installed packages, service configurations,          Flatpak apps, network settings, and more. Create a baseline after a fresh install          to track future changes."
+msgstr ""
+
+#: src/ui/pages/help_page.rs:88
+msgid "The Services Manager lets you view and control systemd services.          Start, stop, enable, or disable services with a simple interface.          Monitor service status and quickly identify failed services that may          indicate system problems."
+msgstr ""
+
+#: src/ui/pages/help_page.rs:72
+msgid "The System Health page displays your system's current status including CPU usage,          memory utilization, disk space, and uptime. Use this page to get a quick overview          of your system's performance and resource consumption."
+msgstr ""
+
+#: src/ui/pages/snapshot_page.rs:608
+msgid "The current system state matches the snapshot."
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:30
+msgid "Theme"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:60
+msgid "Timeline"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:91
+msgid "Timers"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:105
+msgid "Tips"
+msgstr ""
+
+#: src/ui/app.rs:162
+msgid "Toggle sidebar"
+msgstr ""
+
+#: src/ui/pages/performance_page.rs:253
+msgid "Top Contributors"
+msgstr ""
+
+#: src/ui/widgets/process_list.rs:37
+msgid "Top Processes"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:135
+msgid "Total Events"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:84 src/ui/pages/diagnostics_page.rs:90
+msgid "Unavailable"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:156
+msgid "Unified timeline of system events from journald, kernel, and systemd with severity filtering."
+msgstr ""
+
+#: src/ui/pages/health_page.rs:686
+msgid "Unknown"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:147 src/ui/pages/health_page.rs:411
+msgid "Uptime"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:316
+msgid "Usage"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:381 src/ui/pages/services_page.rs:90
+msgid "User Services"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:158
+msgid "View, start, stop, enable, and disable systemd services with real-time status."
+msgstr ""
+
+#: src/ui/pages/services_page.rs:427
+msgid "Warning: This is a critical system service"
+msgstr ""
+
+#: src/ui/widgets/filter_bar.rs:30
+msgid "Warnings"
+msgstr ""
+
+#: src/ui/pages/settings_page.rs:70
+msgid "Warnings & errors"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:142
+msgid "What's New in"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:73
+msgid "XDG Desktop Portal"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:65 src/ui/pages/diagnostics_page.rs:78
+msgid "Yes"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:255
+msgid "failed"
+msgstr ""
+
+#: src/ui/pages/diagnostics_page.rs:64
+msgid "libadwaita Compatible"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:259
+msgid "of"
+msgstr ""
+
+#: src/ui/pages/health_page.rs:245
+msgid "running"
+msgstr ""
+
+#: src/ui/pages/services_page.rs:261
+msgid "services"
+msgstr ""
+
+#: src/ui/pages/help_page.rs:106
+msgid ""
+"• Create a baseline snapshot after installing your system or major updates.\n"
+"         • Pay attention to 'High Impact' changes—they often affect security or stability.\n"
+"         • Use 'Redact sensitive data' when sharing snapshots for troubleshooting.\n"
+"         • Regularly check for failed services that might indicate problems.\n"
+"         • Use keyboard shortcuts for faster navigation (Alt+1...5 to switch pages)."
+msgstr ""

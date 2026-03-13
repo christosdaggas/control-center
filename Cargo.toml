@@ -1,0 +1,93 @@
+[package]
+name = "control-center"
+version = "1.5.0"
+edition = "2021"
+authors = ["Christos A. Daggas <info@chrisdaggas.com>"]
+description = "Linux System Change & Activity Timeline Viewer"
+license = "MIT"
+repository = "https://chrisdaggas.com"
+homepage = "https://chrisdaggas.com"
+keywords = ["linux", "system", "timeline", "logs", "gtk4"]
+categories = ["gui", "development-tools"]
+
+[dependencies]
+gtk4 = { version = "0.9", features = ["v4_12"] }
+libadwaita = { version = "0.7", features = ["v1_4"] }
+
+tokio = { version = "1", features = ["rt-multi-thread", "sync", "time", "fs"] }
+
+chrono = { version = "0.4", features = ["serde"] }
+
+uuid = { version = "1", features = ["v4", "serde"] }
+
+thiserror = "2"
+anyhow = "1"
+
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+directories = "6"
+
+gettext-rs = "0.7"
+
+regex = "1"
+once_cell = "1"
+
+sha2 = "0.10"
+hex = "0.4"
+
+systemd-journal-logger = "2"
+
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls", "json"] }
+
+[dev-dependencies]
+tempfile = "3"
+pretty_assertions = "1"
+
+[features]
+default = []
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "warn"
+expect_used = "warn"
+
+[package.metadata.deb]
+name = "lnx-control-center"
+extended-description = "Control Center presents a unified timeline of meaningful system changes, turning logs and events into an understandable narrative of what happened on your Linux system."
+depends = "libgtk-4-1, libadwaita-1-0"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/control-center", "usr/bin/", "755"],
+    ["data/com.chrisdaggas.control-center.desktop", "usr/share/applications/", "644"],
+    ["data/com.chrisdaggas.control-center.metainfo.xml", "usr/share/metainfo/", "644"],
+    ["data/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg", "usr/share/icons/hicolor/scalable/apps/", "644"],
+    ["README.md", "usr/share/doc/lnx-control-center/", "644"],
+]
+
+[package.metadata.generate-rpm]
+name = "lnx-control-center"
+assets = [
+    { source = "target/release/control-center", dest = "/usr/bin/control-center", mode = "755" },
+    { source = "data/com.chrisdaggas.control-center.desktop", dest = "/usr/share/applications/com.chrisdaggas.control-center.desktop", mode = "644" },
+    { source = "data/com.chrisdaggas.control-center.metainfo.xml", dest = "/usr/share/metainfo/com.chrisdaggas.control-center.metainfo.xml", mode = "644" },
+    { source = "data/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg", dest = "/usr/share/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg", mode = "644" },
+    { source = "README.md", dest = "/usr/share/doc/lnx-control-center/README.md", mode = "644" },
+]
+
+[package.metadata.generate-rpm.requires]
+gtk4 = ">= 4.12"
+libadwaita = ">= 1.4"

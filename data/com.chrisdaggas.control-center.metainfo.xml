@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.chrisdaggas.control-center</id>
+  <name>Control Center</name>
+  <summary>Linux System Change &amp; Activity Timeline Viewer</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="com.chrisdaggas">
+    <name>Christos A. Daggas</name>
+  </developer>
+  
+  <description>
+    <p>
+      Control Center presents a unified timeline of meaningful system changes,
+      turning logs and events into an understandable narrative of what happened
+      on your Linux system.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Unified Timeline: Aggregate events from journald, package managers, and kernel</li>
+      <li>Smart Filtering: Preset filters for "Since Last Reboot", "Warnings &amp; Errors", "Changes Only"</li>
+      <li>Correlation Engine: Rule-based grouping of related events with transparent reasoning</li>
+      <li>Human-Readable Summaries: Clear explanations with expandable raw evidence</li>
+    </ul>
+  </description>
+  
+  <launchable type="desktop-id">com.chrisdaggas.control-center.desktop</launchable>
+  
+  <url type="homepage">https://chrisdaggas.com</url>
+  <url type="bugtracker">https://chrisdaggas.com/contact</url>
+  
+  <content_rating type="oars-1.1"/>
+  
+  <releases>
+    <release version="1.5.0" date="2026-03-13">
+      <description>
+        <p>Introduces the new Security Posture page with firewall, MAC policy, Secure Boot, SSH exposure, privileged access, and Flatpak permission insights, plus snapshot comparison support for security changes.</p>
+      </description>
+    </release>
+    <release version="1.5.0" date="2026-02-15">
+      <description>
+        <p>Internationalization support for 8 languages. Performance optimizations with async data loading. System diagnostics page. Codebase cleanup and bug fixes.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2026-01-13">
+      <description>
+        <p>Initial release of Control Center.</p>
+      </description>
+    </release>
+  </releases>
+  
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  
+  <categories>
+    <category>System</category>
+    <category>Utility</category>
+  </categories>
+  
+  <keywords>
+    <keyword>system</keyword>
+    <keyword>timeline</keyword>
+    <keyword>logs</keyword>
+    <keyword>events</keyword>
+    <keyword>monitor</keyword>
+    <keyword>journal</keyword>
+  </keywords>
+</component>

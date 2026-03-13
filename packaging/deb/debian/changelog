@@ -1,0 +1,18 @@
+lnx-control-center (1.5.0-1) unstable; urgency=medium
+
+  * Add Security Posture page for firewall, SELinux/AppArmor, Secure Boot,
+    SSH exposure, admin access, and Flatpak sandbox visibility
+  * Compare security posture changes in system snapshots
+
+ -- Christos A. Daggas <info@chrisdaggas.com>  Fri, 13 Mar 2026 12:00:00 +0000
+
+lnx-control-center (1.0.0-1) unstable; urgency=medium
+
+  * Initial release
+  * System health monitoring with real-time metrics
+  * Service management
+  * Activity timeline with event correlation
+  * Known-good snapshot comparison
+  * Performance pressure analysis
+
+ -- Christos A. Daggas <info@chrisdaggas.com>  Mon, 30 Jun 2025 12:00:00 +0000

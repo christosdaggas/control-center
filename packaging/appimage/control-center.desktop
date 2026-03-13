@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Control Center
+Comment=Linux System Change & Activity Timeline Viewer
+Exec=control-center
+Icon=com.chrisdaggas.control-center
+Terminal=false
+Type=Application
+Categories=System;Utility;GTK;
+Keywords=system;timeline;logs;events;monitor;
+StartupWMClass=com.chrisdaggas.control-center

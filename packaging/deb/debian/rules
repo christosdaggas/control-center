@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cargo build --release
+
+override_dh_auto_install:
+	mkdir -p debian/lnx-control-center/usr/bin
+	mkdir -p debian/lnx-control-center/usr/share/applications
+	mkdir -p debian/lnx-control-center/usr/share/metainfo
+	mkdir -p debian/lnx-control-center/usr/share/icons/hicolor/scalable/apps
+	install -m 755 target/release/control-center debian/lnx-control-center/usr/bin/
+	install -m 644 data/com.chrisdaggas.control-center.desktop debian/lnx-control-center/usr/share/applications/
+	install -m 644 data/com.chrisdaggas.control-center.metainfo.xml debian/lnx-control-center/usr/share/metainfo/
+	install -m 644 data/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg debian/lnx-control-center/usr/share/icons/hicolor/scalable/apps/
+
+override_dh_auto_test:
+	# Skip tests for now

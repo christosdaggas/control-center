@@ -1,0 +1,12 @@
+[Unit]
+Description=Control Center Auto-Snapshot
+Documentation=https://chrisdaggas.com
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/control-center --create-snapshot "Auto-snapshot %H"
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target

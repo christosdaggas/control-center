@@ -1,0 +1,58 @@
+version: 1
+script:
+  - cd $SOURCE_DIR
+  - mkdir -p AppDir/usr/bin
+  - mkdir -p AppDir/usr/share/applications
+  - mkdir -p AppDir/usr/share/metainfo
+  - mkdir -p AppDir/usr/share/icons/hicolor/scalable/apps
+  - mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
+  - cp target/release/control-center AppDir/usr/bin/
+  - cp data/com.chrisdaggas.control-center.desktop AppDir/usr/share/applications/
+  - cp data/com.chrisdaggas.control-center.desktop AppDir/
+  - cp data/com.chrisdaggas.control-center.metainfo.xml AppDir/usr/share/metainfo/
+  - cp data/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg AppDir/usr/share/icons/hicolor/scalable/apps/
+  - cp data/icons/hicolor/scalable/apps/com.chrisdaggas.control-center.svg AppDir/com.chrisdaggas.control-center.svg
+
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: com.chrisdaggas.control-center
+    name: Control Center
+    icon: com.chrisdaggas.control-center
+    version: 1.0.0
+    exec: usr/bin/control-center
+    exec_args: $@
+
+  apt:
+    arch: amd64
+    sources:
+      - sourceline: deb http://archive.ubuntu.com/ubuntu/ jammy main universe
+        key_url: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3B4FE6ACC0B21F32
+
+    include:
+      - libgtk-4-1
+      - libadwaita-1-0
+      - libgraphene-1.0-0
+      - libpango-1.0-0
+      - libcairo2
+      - libgdk-pixbuf-2.0-0
+      - librsvg2-common
+
+  runtime:
+    env:
+      GTK_THEME: Adwaita:dark
+
+  test:
+    fedora-30:
+      image: appimagecrafters/tests-env:fedora-30
+      command: ./AppRun
+    debian-stable:
+      image: appimagecrafters/tests-env:debian-stable
+      command: ./AppRun
+    ubuntu-xenial:
+      image: appimagecrafters/tests-env:ubuntu-xenial
+      command: ./AppRun
+
+AppImage:
+  arch: x86_64
+  update-information: guess

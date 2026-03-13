@@ -1,0 +1,27 @@
+Source: lnx-control-center
+Section: utils
+Priority: optional
+Maintainer: Christos A. Daggas <info@chrisdaggas.com>
+Build-Depends: debhelper-compat (= 13),
+               cargo,
+               rustc,
+               libgtk-4-dev,
+               libadwaita-1-dev,
+               pkg-config
+Standards-Version: 4.6.0
+Homepage: https://chrisdaggas.com
+Rules-Requires-Root: no
+
+Package: lnx-control-center
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk-4-1, libadwaita-1-0
+Description: Linux System Change & Activity Timeline Viewer
+ Control Center is a modern GTK4/Libadwaita desktop application for monitoring
+ system health, managing services, viewing activity logs, and comparing
+ system state snapshots. Features include:
+ .
+  - System health monitoring with real-time metrics
+  - Service management (start, stop, enable, disable)
+  - Activity timeline with event correlation
+  - Known-good snapshot comparison
+  - Performance pressure analysis

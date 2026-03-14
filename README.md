@@ -36,20 +36,6 @@ sudo apt install libgtk-4-dev libadwaita-1-dev
 cargo build --release
 ```
 
-### Arch Linux
-
-```bash
-sudo pacman -S gtk4 libadwaita
-cargo build --release
-```
-
-### openSUSE
-
-```bash
-sudo zypper install gtk4-devel libadwaita-devel
-cargo build --release
-```
-
 ### Running
 
 ```bash
@@ -66,16 +52,6 @@ src/
 └── ui/             # GTK4/libadwaita widgets and pages
 ```
 
-## Event Sources
-
-| Source | Description | Platforms |
-|--------|-------------|-----------|
-| Journald | Systemd journal | All |
-| DNF | Package manager | Fedora/RHEL |
-| APT | Package manager | Debian/Ubuntu |
-| Pacman | Package manager | Arch Linux |
-| Zypper | Package manager | openSUSE |
-| Kernel | dmesg/kmsg | All |
 
 ## Correlation Rules
 

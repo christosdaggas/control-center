@@ -4,6 +4,8 @@
 
 A GTK4/libadwaita application that presents a unified timeline of meaningful system changes, turning logs and events into an understandable narrative.
 
+<img src="control-center.png" width="100%" />
+
 ## Features
 
 - 📊 **Unified Timeline**: Aggregate events from journald, package managers, kernel, and more

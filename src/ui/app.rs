@@ -234,6 +234,7 @@ impl ControlCenterApp {
         let about = adw::AboutWindow::builder()
             .application_name(APP_NAME)
             .application_icon(APP_ID)
+            .developer_name("Christos A. Daggas")
             .version(APP_VERSION)
             .license_type(gtk4::License::MitX11)
             .website("https://chrisdaggas.com")

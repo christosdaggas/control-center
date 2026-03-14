@@ -71,7 +71,6 @@ Each correlation includes:
 
 **Christos A. Daggas**
 - Website: [chrisdaggas.com](https://chrisdaggas.com)
-- Email: info@chrisdaggas.com
 
 ## License
 
